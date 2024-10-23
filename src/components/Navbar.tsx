@@ -19,7 +19,7 @@ export function Navbar() {
     },
   ]);
   return (
-    <NavbarBs className="bg-white shadow-sm mb-3">
+    <NavbarBs sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
         <Nav className="me-auto">
           {links.map((link) => (
@@ -29,11 +29,30 @@ export function Navbar() {
           ))}
         </Nav>
         <button
-          style={{ width: "2.5rem", height: "2.5rem", paddingRight: "8px" }}
-          variant="outline-primary"
-          className="border border-primary rounded-circle"
+          style={{
+            width: "2.5rem",
+            height: "2.5rem",
+            paddingRight: "9px",
+            position: "relative",
+          }}
+          className="border border-info rounded-circle"
         >
           <ShoppingCartIcon />
+          <div
+            className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
+            style={{
+              color: "white",
+              width: "1.2rem",
+              height: "1.2rem",
+              position: "absolute",
+              bottom: 0,
+              right: -0,
+              transform: "translate(25%, 25%)",
+              paddingLeft: "1px",
+            }}
+          >
+            3
+          </div>
         </button>
       </Container>
     </NavbarBs>
