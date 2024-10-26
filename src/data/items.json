@@ -1,0 +1,44 @@
+[
+{
+    "id": 1,
+    "name": "Watch",
+    "price": 11.98,
+    "imgUrl": "/imgs/watch.jpg"
+},
+{
+    "id": 2,
+    "name": "curtain",
+    "price": 11.98,
+    "imgUrl": "/imgs/curtain.jpg"
+},
+{
+    "id": 3,
+    "name": "Electric Fan",
+    "price": 11.98,
+    "imgUrl": "/imgs/electicfan.jpg"
+},
+{
+    "id": 4,
+    "name": "Headset",
+    "price": 11.98,
+    "imgUrl": "/imgs/headset.jpg"
+},
+{
+    "id": 5,
+    "name": "PlayStation5",
+    "price": 11.98,
+    "imgUrl": "/imgs/ps5.jpg"
+},
+{
+    "id": 6,
+    "name": "Laptop i3",
+    "price": 11.98,
+    "imgUrl": "/imgs/laptop.jpg"
+},
+{
+    "id": 7,
+    "name": "Speaker",
+    "price": 11.98,
+    "imgUrl": "/imgs/speaker.jpg"
+}
+]
