@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 export function Navbar() {
-  const { openCart, cartQuantity } = useShoppingCart()
+  const { openCart, cartQuantity } = useShoppingCart();
   const [links] = useState([
     {
       url: "/",
@@ -31,7 +31,7 @@ export function Navbar() {
           ))}
         </Nav>
         <button
-        onClick={openCart}
+          onClick={openCart}
           style={{
             width: "2.5rem",
             height: "2.5rem",
