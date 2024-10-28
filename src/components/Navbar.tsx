@@ -2,8 +2,10 @@ import { Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import ShoppingCartIcon from "./ShoppingCartIcon";
 import { useState } from "react";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 export function Navbar() {
+  const { openCart, cartQuantity } = useShoppingCart()
   const [links] = useState([
     {
       url: "/",
@@ -29,6 +31,7 @@ export function Navbar() {
           ))}
         </Nav>
         <button
+        onClick={openCart}
           style={{
             width: "2.5rem",
             height: "2.5rem",
@@ -51,7 +54,7 @@ export function Navbar() {
               paddingLeft: "1px",
             }}
           >
-            3
+            {cartQuantity}
           </div>
         </button>
       </Container>

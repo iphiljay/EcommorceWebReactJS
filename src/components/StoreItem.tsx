@@ -53,7 +53,7 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
                 </div>
                 <Button onClick={() => increaseCartQuantity(id)}>+</Button>
               </div>
-              <Button variant="danger" onClick={() => removeFromCart(id)}>
+              <Button variant="danger" size="sm" onClick={() => removeFromCart(id)}>
                 Remove
               </Button>
             </div>
