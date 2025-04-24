@@ -3,10 +3,9 @@ export function About() {
     <>
       <h1>About</h1>
       <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius incidunt
-        est quos quod voluptatibus, voluptatem veritatis natus voluptate
-        necessitatibus fugit mollitia praesentium nulla ab nihil dolor
-        exercitationem! Suscipit, cupiditate cumque.
+        ReactEcom is a boutique eCommerce store offering stylish, witty, and
+        motivational quote-based merchandise. Every product is designed to
+        uplift, inspire, or make you laugh—perfect for gifting or self-love.
       </div>
     </>
   );
