@@ -1,0 +1,8 @@
+:root {
+    margin: 0;
+  }
+
+  .bg-gradient {
+    background: linear-gradient(to right, #ffffff, #f8fafc, #f3f4f6);
+  }
+  
