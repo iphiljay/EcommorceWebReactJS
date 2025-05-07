@@ -27,11 +27,14 @@ export const Home: React.FC = () => {
             {topProducts.map((product) => (
               <div key={product.id} className="col-12 col-sm-6 col-lg-4">
                 <div className="card h-100 shadow-sm">
-                  <img
-                    src={product.imgUrl}
-                    className="card-img-top"
-                    alt={product.name}
-                  />
+                  {/* Ratio box for 4:3 aspect */}
+                  <div className="ratio ratio-4x3 overflow-hidden">
+                    <img
+                      src={product.imgUrl}
+                      alt={product.name}
+                      className="img-fluid w-100 h-100 object-fit-cover"
+                    />
+                  </div>
                   <div className="card-body d-flex flex-column">
                     <h5 className="card-title">{product.name}</h5>
                     <p className="card-text fw-bold mb-4">
