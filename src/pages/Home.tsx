@@ -1,5 +1,6 @@
 import React from "react";
 import storeItems from "../data/items.json";
+import { formatCurrency } from "../utilities/formatCurrency";
 
 export const Home: React.FC = () => {
   const topProducts = [...storeItems]
@@ -27,7 +28,6 @@ export const Home: React.FC = () => {
             {topProducts.map((product) => (
               <div key={product.id} className="col-12 col-sm-6 col-lg-4">
                 <div className="card h-100 shadow-sm">
-                  {/* Ratio box for 4:3 aspect */}
                   <div className="ratio ratio-4x3 overflow-hidden">
                     <img
                       src={product.imgUrl}
@@ -38,7 +38,7 @@ export const Home: React.FC = () => {
                   <div className="card-body d-flex flex-column">
                     <h5 className="card-title">{product.name}</h5>
                     <p className="card-text fw-bold mb-4">
-                      ${product.price.toFixed(2)}
+                      {formatCurrency(product.price)}
                     </p>
                     <button className="btn btn-primary mt-auto">
                       Add to Cart
