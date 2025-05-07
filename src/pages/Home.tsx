@@ -2,6 +2,10 @@ import React from "react";
 import storeItems from "../data/items.json";
 
 export const Home: React.FC = () => {
+  const topProducts = [...storeItems]
+    .sort((a, b) => b.price - a.price)
+    .slice(0, 3);
+
   return (
     <div>
       <section className="bg-light py-5 text-center">
@@ -18,9 +22,9 @@ export const Home: React.FC = () => {
 
       <section className="py-5">
         <div className="container">
-          <h2 className="h3 fw-semibold mb-4 text-center">Featured Products</h2>
+          <h2 className="h3 fw-semibold mb-4 text-center">Top Deals</h2>
           <div className="row g-4">
-            {storeItems.slice(0, 3).map((product) => (
+            {topProducts.map((product) => (
               <div key={product.id} className="col-12 col-sm-6 col-lg-4">
                 <div className="card h-100 shadow-sm">
                   <img

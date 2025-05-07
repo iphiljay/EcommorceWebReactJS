@@ -2,7 +2,7 @@
 {
     "id": 1,
     "name": "Watch",
-    "price": 11.98,
+    "price": 101.00,
     "imgUrl": "/imgs/watch.jpg"
 },
 {
@@ -14,7 +14,7 @@
 {
     "id": 3,
     "name": "Electric Fan",
-    "price": 11.98,
+    "price": 20.99,
     "imgUrl": "/imgs/electricfan.jpg"
 },
 {
@@ -26,19 +26,19 @@
 {
     "id": 5,
     "name": "PlayStation5",
-    "price": 11.98,
+    "price": 600.95,
     "imgUrl": "/imgs/ps5.jpg"
 },
 {
     "id": 6,
     "name": "Laptop i3",
-    "price": 11.98,
+    "price": 1200.00,
     "imgUrl": "/imgs/laptop.jpg"
 },
 {
     "id": 7,
     "name": "Speaker",
-    "price": 11.98,
+    "price": 200.00,
     "imgUrl": "/imgs/speaker.jpg"
 }
 ]
